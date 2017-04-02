@@ -55,7 +55,7 @@ docker ps
 The setup makes use of the following images:
 
 - `jupyter/datascience-notebook`
-- `btibert3/r-addons` which extends `rocker/hadleyverse` to include a number of R packages on github:
+- `btibert3/r-addons` which extends `rocker/hadleyverse` to include a number of R packages on github:  
     -- nicolewhite/RNeo4j  
     -- stattleship/stattleship-r@helpers
 
