@@ -2,11 +2,15 @@
 
 Simple impage that includes databases and tools for data science.
 
+## Status
+
+WIP, but things fire up.
+
 ## What you get
 
 - Neo4j with 'APOC' procedures
 - Rstudio Server with R and a number of data science packages as well as interfaces to connect to Redshift, Postgresql, MySQL, and Neo4j.
-_ Juypter Notebook with Julia, Python 2/3 kernels, as well as R
+- Juypter Notebook with Julia, Python 2/3 kernels, as well as R
 
 ## Spin up the tools
 
