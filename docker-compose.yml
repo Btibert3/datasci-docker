@@ -1,0 +1,29 @@
+neo4j:
+  image: btibert3/neo4j-apoc-jdbc
+  ports:
+    - "7474:7474"
+    - "7473:7473"
+    - "7687:7687"
+  volumes:
+    - ~/neo4j/data:/data
+    - ~/neo4j/conf:/conf
+    - ~/neo4j/import:/import
+    - ~/datasets:/datasets
+  environment:
+    NEO4J_AUTH: none
+datasci:
+  image: jupyter/datascience-notebook
+  ports:
+    - "8888:8888"
+  volumes:
+    - ~/datasets:/datasets
+  links:
+    - neo4j
+personal:
+  image: btibert3/r-addons
+  ports:
+    - "8787:8787"
+  volumes:
+    - ~/datasets:/datasets
+  links:
+    - neo4j
