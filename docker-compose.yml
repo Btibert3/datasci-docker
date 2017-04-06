@@ -5,10 +5,9 @@ neo4j:
     - "7473:7473"
     - "7687:7687"
   volumes:
-    - ~/neo4j/data:/data
-    - ~/neo4j/conf:/conf
-    - ~/neo4j/import:/import
-    - ~/datasets:/datasets
+    - ~/neo4j/data:/data/
+    - ~/neo4j/conf:/conf/
+    - ~/datasets:/import/
   environment:
     NEO4J_AUTH: none
 datasci:
