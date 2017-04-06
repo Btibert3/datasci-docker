@@ -17,6 +17,9 @@ datasci:
     - "8888:8888"
   volumes:
     - ~/datasets:/datasets
+  environment:
+   - GRANT_SUDO=yes
+  user: root
   links:
     - neo4j
 personal:
