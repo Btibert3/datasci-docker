@@ -8,6 +8,7 @@ neo4j:
     - ~/neo4j/data:/data
     - ~/neo4j/conf:/conf
     - ~/neo4j/import:/import
+    - ~/neo4j/bin:/bin
     - ~/datasets:/datasets
   environment:
     NEO4J_AUTH: none
