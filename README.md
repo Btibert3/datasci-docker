@@ -41,7 +41,7 @@ docker ps
 Stop the containers with
 
 ```
-docker-compose Stop
+docker-compose stop
 ```
 
 And to verify ...
